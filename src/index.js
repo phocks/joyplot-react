@@ -134,8 +134,8 @@ class Joyplot extends React.Component {
 
   render(props, state) {
     return (
-      <div className={styles.root}>
-        <svg class={styles.joyplot} />
+      <div className="test">
+        <svg class="test" />
       </div>
     );
   }
