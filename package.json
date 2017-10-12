@@ -1,0 +1,56 @@
+{
+  "name": "joyplot-react",
+  "version": "0.0.0",
+  "description": "A chart with overlapping peaks",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "npm run compile && ava",
+    "compile": "babel -d lib/ src/",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phocks/joyplot-react.git"
+  },
+  "keywords": [
+    "react",
+    "joyplot",
+    "chart",
+    "d3",
+    "svg"
+  ],
+  "author": "Joshua Byrd",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phocks/joyplot-react/issues"
+  },
+  "homepage": "https://github.com/phocks/joyplot-react",
+  "devDependencies": {
+    "ava": "^0.19.1",
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.24.1",
+    "enzyme": "^2.8.2",
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4",
+    "react-addons-test-utils": "^15.5.1",
+    "react-dom": "^15.3.1"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "react"
+    ]
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.5.8",
+    "react": "^15.5.4"
+  }
+}
