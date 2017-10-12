@@ -1,6 +1,6 @@
 // import { h, Component } from "preact";
 const React = require('react');
-import * as styles from "./style.scss";
+// import * as styles from "./style.scss";
 import * as d3 from "d3";
 
 class Joyplot extends React.Component {
